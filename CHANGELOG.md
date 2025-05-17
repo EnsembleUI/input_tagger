@@ -1,3 +1,10 @@
+## 3.0.0
+
+* Migrated package to EnsembleUI organization
+* Fixed tag deletion behavior when cursor is positioned within tag boundaries
+* Fixed edge case where deleting text near adjacent tags could cause errors
+* Enhanced overlay behavior to hide properly when cursor interacts with tags
+
 ## 2.1.0
 
 * Added `isInitialTag` property to controller for better control over initial tag state

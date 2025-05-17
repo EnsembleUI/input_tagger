@@ -5,9 +5,12 @@ A Flutter widget that provides tagging capabilities with improved support for sp
 ## Features
 
 * Support for tags with spaces (like "John Smith" or "New York")
-* Multiple trigger characters (@, #, etc.)
-* Customizable tag styles
-* Dynamic overlay for tag suggestions
+* Multiple trigger characters (@, #, etc.) with customizable styling
+* Intelligent tag handling that preserves formatting during text editing
+* Smart cursor positioning that prevents accidental tag modifications
+* Dynamic overlay for tag suggestions with customizable positioning
+* Robust tag deletion and boundary detection
+* Optimized tag formatting with nested tag support
 * Easy integration with existing text fields
 
 ## Getting started
@@ -16,7 +19,7 @@ Add the package to your pubspec.yaml:
 
 ```yaml
 dependencies:
-  input_tagger: ^0.0.1
+  input_tagger: ^2.2.0
 ```
 
 Run `flutter pub get` to install the package.
@@ -87,11 +90,17 @@ InputTagger(
 // Add a tag
 taggerController.addTag(id: 'user123', name: 'John Smith');
 
+// Set initial tag state
+taggerController.isInitialTag = true; // Prevents unwanted search activation
+
 // Clear all tags
 taggerController.clear();
 
 // Get formatted text with tags
 String text = taggerController.formattedText;
+
+// Access all current tags
+final tags = taggerController.tags;
 
 // Dismiss the overlay
 taggerController.dismissOverlay();
@@ -99,6 +108,6 @@ taggerController.dismissOverlay();
 
 ## Additional information
 
-For issues, feature requests, or contributions, please visit [GitHub repository](https://github.com/yourusername/input_tagger).
+For issues, feature requests, or contributions, please visit the [GitHub repository](https://github.com/EnsembleUI/input_tagger).
 
 This package is licensed under the MIT License - see the LICENSE file for details.

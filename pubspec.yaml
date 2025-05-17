@@ -1,9 +1,9 @@
 name: input_tagger
 description: "A Flutter widget that provides tagging capabilities with spaces in tags, supporting various triggers like @ and # with customizable styling."
-version: 2.1.0
-homepage: https://github.com/TheNoumanDev/input_tagger
-repository: https://github.com/TheNoumanDev/input_tagger
-issue_tracker: https://github.com/TheNoumanDev/input_tagger/issues
+version: 3.0.0
+homepage: https://github.com/EnsembleUI/input_tagger
+repository: https://github.com/EnsembleUI/input_tagger
+issue_tracker: https://github.com/EnsembleUI/input_tagger/issues
 
 environment:
   sdk: '>=2.12.0 <4.0.0'

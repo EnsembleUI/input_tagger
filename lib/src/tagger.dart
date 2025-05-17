@@ -695,8 +695,9 @@ class _InputTaggerState extends State<InputTagger> {
         for (var tag in tagsToRemove) {
           _tags.remove(tag);
         }
-
+        _shouldSearch = false;
       }
+
     }
     // Check for backtracking search behavior
     if (_shouldSearch &&
@@ -768,6 +769,7 @@ class _InputTaggerState extends State<InputTagger> {
       } else {
         _extractAndSearch(text, position);
         _recomputeTags(oldCachedText, text, position);
+        widget.controller._onTextChanged(_formattedText);
         _lastCachedText = text;
         return;
       }
