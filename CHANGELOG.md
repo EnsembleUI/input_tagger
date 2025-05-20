@@ -1,3 +1,10 @@
+3.0.1
+
+Improved overlay positioning with center alignment
+Added horizontal centering for overlay with fixed width
+Added overlayWidth property to control the width of the suggestion overlay
+Fixed overlay positioning with proper screen-center alignment
+
 ## 3.0.0
 
 * Migrated package to EnsembleUI organization

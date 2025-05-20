@@ -19,7 +19,7 @@ Add the package to your pubspec.yaml:
 
 ```yaml
 dependencies:
-  input_tagger: ^2.2.0
+  input_tagger: ^3.0.1
 ```
 
 Run `flutter pub get` to install the package.
